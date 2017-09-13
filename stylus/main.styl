@@ -1,0 +1,204 @@
+html
+	box-sizing border-box
+
+body
+	font-family 'Open Sans', sans-serif
+.contenedor
+	max-width 1100px
+	width 100%
+	margin auto
+
+// colores
+c-0 = #127427
+c-1 = #f19f30
+c-3 = #a61206
+
+// fonts
+t-0 = 'Raleway', sans-serif
+t-1 = 'Open Sans', sans-serif
+/*encabezado*/
+.encabezado-sitio
+	border-bottom 1px solid #c1c1c1
+	padding-bottom 20px
+
+.logo
+	text-align center
+	img
+		width 200px
+		height auto
+
+
+.contenedor
+	position relative
+
+#menu-header
+	display flex
+	flex-flow row wrap
+	
+	li 
+		width 20%
+		margin 0
+		&.current_page_item
+			a			
+				background-color c-1
+				color #fff				
+	a 
+		height 45px
+		display flex
+		align-items center
+		justify-content center
+		color #000
+		&:hover
+			background-color c-1
+			color #fff
+			
+
+h1, h2, h3, h4, h5, h6
+	font-family t-0
+	font-weight 900
+	color #000		
+	
+h1
+	font-size 48px
+h2
+	font-size 35px
+	
+h3
+	font-size 25px
+h4
+	font-size 20px
+h5
+	font-size 16px
+	
+h6
+	font-size 14px
+		
+.informacion-encabezado	
+	position absolute
+	top 0
+	right 0
+.hero
+	height 465px
+	display flex
+	align-items center
+	justify-content center
+	position relative
+	background-position center center
+	background-size cover
+	background-attachment fixed
+	
+	&:after
+		content ""
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color #000
+		opacity 0.5
+		z-index 1
+		
+		
+
+.hero-title	
+	text-align center
+	color #fff
+	position relative
+	z-index 2
+
+.w-main	
+	margin-top -100px
+	background-color #fff
+	position relative
+	z-index 3
+	box-sizing border-box
+	padding 50px
+
+
+// footer
+footer
+	text-align center
+	border-top 1px solid #c1c1c1
+	padding-top 20px
+#menu-header-1
+	display flex
+	flex-flow row wrap
+	justify-content center
+
+	li 
+		margin 9px
+		a 
+			font-size 13px
+			font-family t-1
+			font-weight bold
+			color #000
+
+
+.informacion-cajas	
+	display flex
+	flex-flow row wrap
+
+.caja
+	width 33.33%
+	img 
+		max-width 100%
+		height auto
+		display block
+	&:nth-child(2)
+		.contenido-caja			
+			background-color c-0
+	&:nth-child(3)
+		.contenido-caja			
+			background-color c-3
+.contenido-caja	
+	box-sizing border-box
+	padding 10px
+	height 244px
+	display flex
+	align-items center
+	justify-content center	
+	flex-direction column
+	text-align center
+	background-color c-1
+	color #fff
+	h3 
+		color #fff
+	
+
+//mwnu
+.contenedor-grid
+	display flex
+	flex-flow row wrap
+	
+.menu-item-list
+	width 50%	
+	box-sizing border-box
+	padding 0 10px
+	margin-bottom 20px
+	img
+		max-width 100%
+		height auto
+
+.menu-title		
+	display flex
+	justify-content space-between
+	span 
+		margin 0
+//mwnu
+
+// blog
+.principal-blog
+	display flex
+	justify-content space-between
+	flex-flow row wrap
+	main 
+		width 68%
+		margin 0
+		img
+			max-width 100%
+			height auto
+	aside
+		width 31%	
+		margin 0
+// blog
+	
