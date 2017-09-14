@@ -83,12 +83,20 @@ h6 {
 .hero {
   height: 465px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+}
+.hero h1 {
+  margin: 0;
+}
+.hero p {
+  color: #fff;
+  font-size: 30px;
 }
 .hero:after {
   content: "";

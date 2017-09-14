@@ -11,10 +11,10 @@
 	 ?>
 	<div class="ubicacion">
 		<p>
-			Mz C lt. 31 San Genaro	
+			<?php  echo esc_html(get_option('lapizzeria_direccion' )); ?>
 		</p>
 		<p>
-			Telefono 2550992
+			<?php  echo esc_html(get_option('lapizzeria_telefono' )); ?>
 		</p>
 	</div>	 
 </footer>
