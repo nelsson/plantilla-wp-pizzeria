@@ -4,7 +4,7 @@ html
 body
 	font-family 'Open Sans', sans-serif
 .contenedor
-	max-width 1100px
+	max-width 1200px
 	width 100%
 	margin auto
 
@@ -93,7 +93,10 @@ h6
 	p 
 		color #fff
 		font-size 30px
-		
+	.text-banner, a
+		position relative
+		margin 0
+		z-index 10
 	&:after
 		content ""
 		position absolute
@@ -208,4 +211,19 @@ footer
 		width 31%	
 		margin 0
 // blog
-	
+
+// home	
+.title-red
+	text-align center
+	color #ba1803
+
+.home-wrapitem	
+	display flex
+	flex-flow row wrap
+
+.home-itemesp	
+	width 33%
+	margin 0
+	img
+		max-width 100%
+		height auto

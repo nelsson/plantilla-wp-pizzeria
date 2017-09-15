@@ -68,6 +68,7 @@ function lapizzeria_setup(){
 	// agregando tamaño de imagen personalizado
 		add_image_size( 'nosotros', 437, 291, true );
 		add_image_size( 'especialidades', 768, 515, true );
+		add_image_size( 'especialidades_home', 435, 526, true );
 
 		// update_option( 'medium_size_w', 164); //para medium o large
 		
