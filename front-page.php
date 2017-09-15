@@ -70,7 +70,24 @@
 		</div>
 	<?php  endwhile; ?>
 
-<!-- <section class="">
-	
-</section> -->
+<section class="introhome">
+	<div class="contenedor">
+		<?php while(have_posts()):the_post() ?>
+			<div class="intro-text">
+				<?php the_field('introtext') ?>
+			</div>
+			<figure class="intro-image">
+				<img src="<?php the_field('introimagen') ?>" alt="">
+			</figure>
+		<?php endwhile; ?>	
+	</div>
+</section>
+<section class="galeria">
+	<div class="contenedor">
+		<?php $url = get_page_by_title('Galería'); ?>
+		
+		<?php echo get_post_gallery($url->ID) ?>
+
+	</div>
+</section>
 <?php get_footer() ?>
