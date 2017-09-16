@@ -90,4 +90,7 @@
 
 	</div>
 </section>
+    <div id="map" style="height: 500px;"></div>
 <?php get_footer() ?>
+
+ 

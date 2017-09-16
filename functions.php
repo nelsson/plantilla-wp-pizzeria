@@ -34,15 +34,33 @@
 
 		//registrar js
 		wp_register_script('fluidboxjs', get_template_directory_uri() . '/js/fluidbox/jquery.fluidbox.min.js', array(), '1.0', true);
+
+
+		//google maps
+		wp_register_script('gmap', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA91k9KM6x_gy6MPsPX5KY58xB_fbYl358&callback=initMap', array(), '1.0', true);
+		
 		wp_register_script('main', get_template_directory_uri() . '/js/main.js', array(), '1.0', true);
 
+
 		//jquery
+		wp_enqueue_script('gmap');
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('fluidboxjs');
 		wp_enqueue_script('main');
 	}
 	add_action('wp_enqueue_scripts' , 'lapizzeria_Styles' );
 /** para agregas css y js ***/
+
+//agregar async y defer en google map
+
+function agregar_async_defer($tag, $handle){
+	if ('gmap' !== $handle) {
+		return $tag;
+		return str_replace(' src', 'async="async" defer="defer" src', $tag);
+	}
+
+}
+add_filter('script_loader_tag','agregar_async_defer', 10, 2 );
 
 
 
