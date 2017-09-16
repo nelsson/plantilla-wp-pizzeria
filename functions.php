@@ -54,10 +54,10 @@
 //agregar async y defer en google map
 
 function agregar_async_defer($tag, $handle){
-	if ('gmap' !== $handle) {
+	if ('gmap' !== $handle) 
 		return $tag;
 		return str_replace(' src', 'async="async" defer="defer" src', $tag);
-	}
+	
 
 }
 add_filter('script_loader_tag','agregar_async_defer', 10, 2 );
